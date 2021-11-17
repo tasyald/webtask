@@ -12,13 +12,13 @@ const Navbar = () => {
   return(
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a href="/" className="navbar-item">
+        <a href="/webtask/home" className="navbar-item">
           <img src="/images/dana_logo.png" alt="dana" />
         </a>
     
         <button
           onClick={handleClickBurger}
-          className={`navbar-burger ${isActive ? 'is-active' : ''}`}
+          className={`navbar-burger${isActive ? ' is-active' : ''}`}
           aria-label="menu"
           aria-expanded="false"
         >
@@ -26,7 +26,7 @@ const Navbar = () => {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </button>
-        <div className={`navbar-dropdown ${isActive ? 'is-active' : ''}`}>
+        <div className={`navbar-dropdown${isActive ? ' is-active' : ''}`}>
           <a href="/" className="navbar-item">
             About
           </a>
