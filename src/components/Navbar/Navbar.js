@@ -1,38 +1,59 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import './Navbar.scss';
 
-class Navbar extends Component {
-  render () {
-    return(
-      <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <a href="/" className="navbar-item">
-            <img src="/images/dana_logo.png" alt="dana" />
-          </a>
-      
-          <a href="/#" role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div className="navbar-menu">
-      
-          <div className="navbar-end">
-            <a href="/" className="navbar-item">
-              About
-            </a>
-      
-            <a href="/" className="navbar-item">
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </nav>
-    )
+const Navbar = () => {
+  const [isActive, setActive] = useState(false);
+
+  const handleClickBurger = () => {
+    setActive(!isActive);
   }
+
+  return(
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <a href="/" className="navbar-item">
+          <img src="/images/dana_logo.png" alt="dana" />
+        </a>
+    
+        <button
+          onClick={handleClickBurger}
+          className={`navbar-burger ${isActive ? 'is-active' : ''}`}
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <div className={`navbar-dropdown ${isActive ? 'is-active' : ''}`}>
+          <a href="/" className="navbar-item">
+            About
+          </a>
+
+          <a href="/" className="navbar-item">
+            Contact Us
+          </a>
+        </div>
+        {isActive && (
+          <div role="presentation" className="overlay" onClick={handleClickBurger} />
+        )}
+      </div>
+    
+      <div className="navbar-menu">
+    
+        <div className="navbar-end">
+          <a href="/" className="navbar-item">
+            About
+          </a>
+    
+          <a href="/" className="navbar-item">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </nav>
+  )
 }
 
 export default Navbar;
