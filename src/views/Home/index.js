@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Hero from 'components/Hero';
 import PhotoGrid from 'components/PhotoGrid';
+import PageController from 'components/PageController';
 
 const images = [
   {
@@ -59,6 +60,7 @@ class Home extends Component {
       <div class="home">
         <Hero title="Lorem Ipsum" />
         <PhotoGrid images={images} />
+        <PageController />
       </div>
     )
   };
