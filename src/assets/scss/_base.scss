@@ -4,3 +4,8 @@ $grey_text: #4A4A4A;
 body, html, * {
   font-family: 'Roboto';
 }
+
+.container-body {
+  max-width: 1440px;
+  margin: auto;
+}
