@@ -27,11 +27,11 @@ const Navbar = () => {
           <span aria-hidden="true"></span>
         </button>
         <div className={`navbar-dropdown${isActive ? ' is-active' : ''}`}>
-          <a href="/" className="navbar-item">
+          <a href="/webtask/about" className="navbar-item">
             About
           </a>
 
-          <a href="/" className="navbar-item">
+          <a href="/webtask/contact" className="navbar-item">
             Contact Us
           </a>
         </div>
