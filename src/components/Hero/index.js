@@ -10,10 +10,12 @@ const Hero = (props) => {
       class="hero"
       style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${image}')` }}
     >
-      <div class="hero-text">
-        <h1>{title}</h1>
-        <h3>{subtitle}</h3>
-        <button class="button is-primary is-outlined">More Info</button>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1>{title}</h1>
+          <h3>{subtitle}</h3>
+          <button class="button is-primary is-outlined">More Info</button>
+        </div>
       </div>
     </section>
   )
