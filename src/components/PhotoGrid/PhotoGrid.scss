@@ -6,6 +6,37 @@
   .column {
     position: relative;
 
+    .photo-actions {
+      position: absolute;
+      right: 1.5rem;
+      top: 1rem;
+      color: #FFFFFF;
+      opacity: 0;
+      transition: all 0.25s linear;
+
+      > * {
+        margin-left: 0.75rem;
+      }
+
+      .action-share {
+        display: inline-grid;
+
+        .share-social-media {
+          float: right;
+          opacity: 0;
+          display: inline-grid;
+        }
+
+      }
+      .action-share:hover .share-social-media {
+        opacity: 1;
+
+        > * {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+
     .photo-grid-item {
       width: 100%;
       height: 12.5rem;
@@ -25,6 +56,10 @@
     }
   }
 
+  .column:hover .photo-actions {
+    opacity: 1;
+  }
+
   .column:hover .photo-caption {
     opacity: 1;
   }
@@ -35,6 +70,19 @@
     padding: 3rem 0px;
 
     .column {
+      .photo-actions {
+        position: absolute;
+        right: 1.5rem;
+        bottom: -0.5rem;
+        top: auto;
+        color: #4A4A4A;
+        opacity: 1;
+
+        .like-count {
+          display: none;
+        }
+      }
+
       .photo-grid-item {
         height: auto;
         border-radius: 0;
@@ -45,6 +93,8 @@
         position: static;
         opacity: 1;
         color: $grey_text;
+        height: 3rem;
+        padding-right: 1rem;
       }
     }
   }

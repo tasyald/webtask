@@ -1,6 +1,6 @@
 @import '../../assets/scss/base';
 
-.pagination {
+.page-controller {
   justify-content: center;
   margin-bottom: 4rem;
 
@@ -29,5 +29,17 @@
 
   .MuiPaginationItem-textPrimary.Mui-selected:hover {
     background-color: $primary_color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-controller {
+    li:first-child button::after {
+      content: '';
+    }
+  
+    li:last-child button::before {
+      content: '';
+    }
   }
 }
