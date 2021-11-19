@@ -36,14 +36,12 @@ class Home extends Component {
   }
 
   fetchPhotos = async () => {
-    const { page } = this.state;
-
     await apiGetPhotos()
       .then((res) => {
         const { data } = res;
         console.log(Math.ceil(data / PAGE_SIZE));
         this.setState({
-          photos: this.paginate(data, PAGE_SIZE, page),
+          photos: data,
           pages: Math.ceil(data.length / PAGE_SIZE),
         });
       })
@@ -55,6 +53,12 @@ class Home extends Component {
     return array.slice((page - 1) * pageSize, page * pageSize);
   }
 
+  onChangePage = (currentPage) => {
+    this.setState({
+      page: currentPage,
+    });
+  }
+
   render() {
     const {
       subtitle, photos, pages, page,
@@ -63,8 +67,8 @@ class Home extends Component {
     return (
       <div className="home">
         <Hero title="Photos" subtitle={subtitle} image="https://source.unsplash.com/random" />
-        <PhotoGrid photos={photos} />
-        <PageController pages={pages} currentPage={page} />
+        <PhotoGrid photos={this.paginate(photos, PAGE_SIZE, page)} />
+        <PageController pages={pages} currentPage={page} onChange={this.onChangePage} />
       </div>
     )
   };
