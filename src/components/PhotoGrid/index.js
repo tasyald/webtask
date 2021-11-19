@@ -9,7 +9,7 @@ const PhotoGrid = (props) => {
     <div class="photo-grid container-body">
       <div class="columns is-multiline">
         {images.map((image) => (
-            <div class="column is-3" key={image.id}>
+            <div class="column is-3-desktop is-4-tablet" key={image.id}>
               <img class="photo-grid-item" src={image.thumbnailUrl} alt={image.title} />
             </div>
         ))}
