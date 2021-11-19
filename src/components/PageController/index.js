@@ -12,7 +12,7 @@ const PageController = (props) => {
   };
 
   return(
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+    <nav className="pagination is-centered" role="navigation" aria-label="pagination">
       <Pagination
         count={pages}
         page={currentPage}

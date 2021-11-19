@@ -4,7 +4,7 @@ import 'assets/scss/_base.scss';
 import 'App.scss';
 
 class App extends Component {
-  render () {
+  render() {
     return(
       <Route />
     )

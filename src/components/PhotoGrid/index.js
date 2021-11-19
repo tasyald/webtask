@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import './PhotoGrid.scss';
 
 const PhotoGrid = (props) => {
-  const { images } = props;
+  const { photos } = props;
   return(
-    <div class="photo-grid container-body">
-      <div class="columns is-multiline">
-        {images.map((image) => (
-            <div class="column is-3-desktop is-4-tablet" key={image.id}>
-              <img class="photo-grid-item" src={image.thumbnailUrl} alt={image.title} />
+    <div className="photo-grid container-body">
+      <div className="columns is-multiline">
+        {photos.map((photo) => (
+            <div className="column is-3-desktop is-4-tablet" key={photo.id}>
+              <img className="photo-grid-item" src={photo.thumbnailUrl} alt={photo.title} />
             </div>
         ))}
       </div>
@@ -19,7 +19,7 @@ const PhotoGrid = (props) => {
 };
 
 PhotoGrid.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.shape({
+  photos: PropTypes.arrayOf(PropTypes.shape({
     albumId: PropTypes.number,
     id: PropTypes.number,
     title: PropTypes.string,
@@ -29,7 +29,7 @@ PhotoGrid.propTypes = {
 };
 
 PhotoGrid.defaultProps = {
-  images: []
+  photos: [],
 };
 
 export default PhotoGrid;

@@ -8,17 +8,17 @@ const Footer = () => (
   <footer className="footer">
     <div className="container-body columns is-multiline">
       <div className="column is-6 is-12-mobile footer-follow">
-        <div class="footer-follow-us">
+        <div className="footer-follow-us">
           Follow Us:
         </div>
-        <div class="footer-social-media">
-          <span class="icon">
+        <div className="footer-social-media">
+          <span className="icon">
             <FontAwesomeIcon icon={faFacebookSquare} />
           </span>
-          <span class="icon">
+          <span className="icon">
             <FontAwesomeIcon icon={faInstagram} />
           </span>
-          <span class="icon">
+          <span className="icon">
             <FontAwesomeIcon icon={faTwitter} />
           </span>
         </div>
@@ -32,7 +32,7 @@ const Footer = () => (
           <a href="/" className="footer-link">Menu</a>
         </div>
         <div>
-          <span class="copyright-year">&copy; 2017</span> DANA – PT. Espay Debit Koe. All Rights Reserved.
+          <span className="copyright-year">&copy; 2017</span> DANA – PT. Espay Debit Koe. All Rights Reserved.
         </div>
       </div>
     </div>
