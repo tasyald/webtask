@@ -43,10 +43,10 @@ const Navbar = () => {
 
       <div className="navbar-menu">
         <div className="navbar-end">
-          <a href="/" className="navbar-item">
+          <a href="/webtask/about" className="navbar-item">
             About
           </a>
-          <a href="/" className="navbar-item">
+          <a href="/webtask/contact" className="navbar-item">
             Contact Us
           </a>
         </div>
