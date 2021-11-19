@@ -10,11 +10,15 @@ const Introduction = (props) => {
       <div className="columns">
         <div className="introduction-text column is-4">
           <h1 class="title">{title}</h1>
-          <p>{description}</p>
+          <p class="introduction-description">{description}</p>
         </div>
 
         <div className="column is-8">
           <img class="introduction-illustration" src="/images/illustration.jpg" alt="illustration"/>
+        </div>
+
+        <div className="introduction-text-mobile column is-4">
+          <p>{description}</p>
         </div>
       </div>
     </section>
