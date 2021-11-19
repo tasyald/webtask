@@ -1,0 +1,45 @@
+@import '../../assets/scss/base';
+
+.page-controller {
+  justify-content: center;
+  margin-bottom: 4rem;
+
+  li:first-child button::after {
+    content: 'Back';
+    margin: 0 0.5rem 0 1rem;
+  }
+
+  li:last-child button::before {
+    content: 'Next';
+    margin-left: 1rem;
+    margin: 0 1rem 0 0.5rem;
+  }
+
+  .MuiPaginationItem-root {
+    color: $primary_color;
+
+    &.Mui-disabled {
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+
+  .MuiPaginationItem-textPrimary.Mui-selected {
+    background-color: $primary_color;
+  }
+
+  .MuiPaginationItem-textPrimary.Mui-selected:hover {
+    background-color: $primary_color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-controller {
+    li:first-child button::after {
+      content: '';
+    }
+  
+    li:last-child button::before {
+      content: '';
+    }
+  }
+}

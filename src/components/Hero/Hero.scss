@@ -1,0 +1,43 @@
+@import '../../assets/scss/base';
+
+.hero {
+  height: 22rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .hero-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #FFFFFF;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    h3 {
+      margin: 1rem 0 1.5rem;
+    }
+
+    .button {
+      color: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      border-radius: 0;
+      text-transform: uppercase;
+      padding: 1rem 1.5rem;
+      max-width: 8.75rem;
+    }
+
+    .button:hover {
+      background-color: #FFFFFF;
+      border: 2px solid #3F4143;
+      color: #3F4143;
+      font-weight: bold;
+    }
+  }
+}
