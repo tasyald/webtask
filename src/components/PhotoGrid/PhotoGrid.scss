@@ -3,12 +3,30 @@
 .photo-grid {
   padding: 3rem 2rem;
 
-  .photo-grid-item {
-    width: 100%;
-    height: 12.5rem;
-    object-fit: cover;
-    border-radius: 6px;
-    box-shadow: 4px 4px 4px rgba(70, 63, 63, 0.2);
+  .column {
+    position: relative;
+
+    .photo-grid-item {
+      width: 100%;
+      height: 12.5rem;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 4px 4px 4px rgba(70, 63, 63, 0.2);
+    }
+
+    .photo-caption {
+      position: absolute;
+      top: 9.75rem;
+      width: 80%;
+      margin: 0 1rem;
+      color: #FFFFFF;
+      opacity: 0;
+      transition: all 0.25s linear;
+    }
+  }
+
+  .column:hover .photo-caption {
+    opacity: 1;
   }
 }
 
@@ -16,9 +34,18 @@
   .photo-grid {
     padding: 3rem 0px;
 
-    .photo-grid-item {
-      height: auto;
-      border-radius: 0;
+    .column {
+      .photo-grid-item {
+        height: auto;
+        border-radius: 0;
+      }
+
+      .photo-caption {
+        margin: 0 1rem;
+        position: static;
+        opacity: 1;
+        color: $grey_text;
+      }
     }
   }
 }

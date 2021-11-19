@@ -11,6 +11,7 @@ const PhotoGrid = (props) => {
         {photos.map((photo) => (
             <div className="column is-3-desktop is-4-tablet" key={photo.id}>
               <img className="photo-grid-item" src={photo.thumbnailUrl} alt={photo.title} />
+              <figcaption className="photo-caption">{photo.title}</figcaption>
             </div>
         ))}
       </div>
