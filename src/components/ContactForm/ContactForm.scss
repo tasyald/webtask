@@ -1,0 +1,26 @@
+@import '../../assets/scss/base';
+
+.contact-form {
+  .field:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .textarea {
+    resize: none;
+  }
+
+  .button-send {
+    margin-top: 1.5rem;
+    background-color: $primary_color;
+  }
+
+  .button-send:hover {
+    background-color: #1081DE;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature {
+    padding-top: 2rem;
+  }
+}
