@@ -4,7 +4,7 @@ import './ContactForm.scss';
 
 const ContactForm = () => {
   return(
-    <div className="contact-form">
+    <section className="contact-form">
       <h2 className="title">Contact Us</h2>
       <form>
         <div className="field">
@@ -30,7 +30,7 @@ const ContactForm = () => {
       </form>
 
       <button className="button-send button is-primary is-fullwidth">Send</button>
-    </div>
+    </section>
   )
 };
 

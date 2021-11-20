@@ -25,12 +25,10 @@ class Home extends Component {
   fetchSubtitle = async () => {
     await apiGetSubtitle()
       .then((res) => {
-        console.log(res);
         const { data } = res;
         this.setState({ subtitle: data.value });
       })
       .catch((e) => {
-        console.log(e);
       })
   }
 
@@ -38,7 +36,6 @@ class Home extends Component {
     await apiGetPhotos()
       .then((res) => {
         const { data } = res;
-        console.log(Math.ceil(data / PAGE_SIZE));
         this.setState({
           photos: data,
           pages: Math.ceil(data.length / PAGE_SIZE),
@@ -64,7 +61,7 @@ class Home extends Component {
     } = this.state;
 
     return (
-      <div className="home">
+      <div className="home page">
         <Hero title="Photos" subtitle={subtitle} image="https://source.unsplash.com/random" />
         <PhotoGrid photos={this.paginate(photos, PAGE_SIZE, page)} />
         <PageController pages={pages} currentPage={page} onChange={this.onChangePage} />
