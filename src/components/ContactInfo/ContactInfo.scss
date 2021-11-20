@@ -1,0 +1,11 @@
+@import '../../assets/scss/base';
+
+.contact-info {
+  padding: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    padding: 2.5rem 1rem;
+  }
+}
