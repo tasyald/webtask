@@ -1,0 +1,17 @@
+@import '../../assets/scss/base';
+
+.feature {
+  text-align: center;
+
+  .feature-icon {
+    width: 40%;
+  }
+
+  .feature-title {
+    margin: 0.75rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+}
