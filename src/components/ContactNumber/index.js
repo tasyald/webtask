@@ -6,23 +6,25 @@ import { faComments } from '@fortawesome/free-solid-svg-icons';
 import './ContactNumber.scss';
 
 const ContactNumber = (props) => {
-  const { number } = props;
+  const { number, center } = props;
   return(
-    <div className="contact-number">
-      <div class="contact-icon">
+    <div className="contact-number" style={{ justifyContent: center ? 'center' : 'initial' }}>
+      <div className="contact-icon">
         <FontAwesomeIcon icon={faComments} />
       </div>
-      <div class="contact-phone"><b>{number}</b></div>
+      <div className="contact-phone"><b>{number}</b></div>
     </div>
   )
 };
 
 ContactNumber.propTypes = {
   number: PropTypes.string,
+  center: PropTypes.bool,
 };
 
 ContactNumber.defaultProps = {
   number: '',
+  center: false,
 };
 
 export default ContactNumber;

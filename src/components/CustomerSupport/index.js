@@ -12,7 +12,7 @@ const CustomerSupport = (props) => {
       <h2 className="title">Customer Support</h2>
       <ContactNumber number={number} />
       <p className="contact-description">
-        Contact our customer support or email us at <a href="mailto:help@dana.id" class="email"><b>help@dana.id</b></a> if you need help
+        Contact our customer support or email us at <a href="mailto:help@dana.id" className="email"><b>help@dana.id</b></a> if you need help
       </p>
     </div>
   )

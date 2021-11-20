@@ -6,7 +6,7 @@ import './ContactInfo.scss';
 
 const ContactInfo = () => {
   return(
-    <div className="contact-info">
+    <div className="contact-info column is-7">
       <CustomerSupport number="1-500-445" />
       <ContactSocial />
     </div>

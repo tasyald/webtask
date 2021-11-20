@@ -7,13 +7,8 @@ class Contact extends Component {
     return (
       <div className="contact page container-body">
         <div className="columns">
-          <div className="column is-5">
-            <ContactForm />
-          </div>
-
-          <div className="column is-7">
-            <ContactInfo />
-          </div>
+          <ContactForm />
+          <ContactInfo />
         </div>
       </div>
     )

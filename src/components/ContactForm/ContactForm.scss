@@ -3,6 +3,10 @@
 .contact-form {
   padding: 3rem 0 3rem 3rem;
 
+  .is-mobile {
+    display: none;
+  }
+
   .field:not(:last-child) {
     margin-bottom: 1.25rem;
   }
@@ -27,6 +31,19 @@
 
 @media screen and (max-width: 768px) {
   .contact-form {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 2rem;
+
+    .title {
+      margin-bottom: 0;
+    }
+
+    .is-mobile {
+      display: block;
+
+      .fill-form {
+        text-align: center;
+        margin: 1rem 0;
+      }
+    }
   }
 }
