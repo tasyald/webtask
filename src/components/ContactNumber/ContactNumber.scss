@@ -1,0 +1,17 @@
+@import '../../assets/scss/base';
+
+.contact-number {
+  color: $primary_color;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+
+  .contact-icon {
+    font-size: 40px;
+    margin-right: 1rem;
+  }
+
+  .contact-phone {
+    font-size: 28px;
+  }
+}

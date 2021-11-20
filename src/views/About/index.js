@@ -20,7 +20,6 @@ class About extends Component {
   fetchAboutInfo = async () => {
     await apiGetAboutInfo()
       .then((res) => {
-        console.log(res);
         const { data } = res;
         this.setState({ title: data.title, description: data.opening_crawl }, () => {
           this.generateFeatures();
@@ -43,7 +42,7 @@ class About extends Component {
     const { title, description, features } = this.state;
 
     return (
-      <div className="about">
+      <div className="about page">
         <Introduction title={title} description={description} />
         {features.length > 0 && <Features title={title} features={features} />}
       </div>

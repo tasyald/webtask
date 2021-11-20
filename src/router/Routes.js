@@ -2,11 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Navbar from 'components/Navbar';
-import Home from 'views/Home';
-import About from 'views/About';
 import Footer from 'components/Footer';
 
 const browserHistory = createBrowserHistory();
+
+const Home = React.lazy(() => import('views/Home'));
+const About = React.lazy(() => import('views/About'));
+const Contact = React.lazy(() => import('views/Contact'));
 
 const RouterPath = () => (
   <Router history={browserHistory}>
@@ -14,7 +16,7 @@ const RouterPath = () => (
     <Switch>
       <Route path="/webtask/home" component={Home} />
       <Route path="/webtask/about" component={About} />
-      {/* Contact route */}
+      <Route path="/webtask/contact" component={Contact} />
       <Route path="/" component={Home} />
     </Switch>
     <Footer />

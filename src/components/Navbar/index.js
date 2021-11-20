@@ -29,10 +29,10 @@ const Navbar = () => {
         </button>
 
         <div className={`navbar-dropdown${isActive ? ' is-active' : ''}`}>
-          <Link to="/webtask/about" className="navbar-item">
+          <Link to="/webtask/about" className="navbar-item" onClick={handleClickBurger}>
             About
           </Link>
-          <Link to="/webtask/contact" className="navbar-item">
+          <Link to="/webtask/contact" className="navbar-item" onClick={handleClickBurger}>
             Contact Us
           </Link>
         </div>

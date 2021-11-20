@@ -8,12 +8,6 @@
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-
-    .icon {
-      font-size: 24px;
-      margin-right: 1rem;
-      cursor: pointer;
-    }
   
     .footer-copyrights {
       text-align: right;
@@ -39,15 +33,6 @@
 
       .footer-follow-us {
         margin-bottom: 1rem;
-      }
-
-      .footer-social-media {
-        display: flex;
-        justify-content: space-around;
-
-        .icon {
-          margin-right: 0;
-        }
       }
 
       .footer-links {
