@@ -1,7 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import SocialMedia from 'components/SocialMedia';
 
 import './Footer.scss';
 
@@ -12,25 +11,13 @@ const Footer = () => (
         <div className="footer-follow-us">
           Follow Us:
         </div>
-        <div className="footer-social-media">
-          <span className="icon">
-            <FontAwesomeIcon icon={faFacebookSquare} />
-          </span>
-          <span className="icon">
-            <FontAwesomeIcon icon={faInstagram} />
-          </span>
-          <span className="icon">
-            <FontAwesomeIcon icon={faTwitter} />
-          </span>
-        </div>
+        <SocialMedia />
       </div>
 
       <div className="column is-6 footer-copyrights">
         <div className="footer-links">
-          <Link to="/" className="footer-link">Menu</Link>
-          <Link to="/" className="footer-link">Menu</Link>
-          <Link to="/" className="footer-link">Menu</Link>
-          <Link to="/" className="footer-link">Menu</Link>
+          <Link to="/webtask/about" className="footer-link">About</Link>
+          <Link to="/webtask/contact" className="footer-link">Contact Us</Link>
         </div>
         <div>
           <span className="copyright-year">&copy; 2017</span> DANA – PT. Espay Debit Koe. All Rights Reserved.
