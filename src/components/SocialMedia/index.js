@@ -11,13 +11,19 @@ const SocialMedia = (props) => {
   return (
     <div className="social-media">
       <span className="icon" style={{ fontSize: size, marginRight: margin }}>
-        <FontAwesomeIcon icon={faFacebookSquare} />
+        <a href="https://www.facebook.com/danawallet" className="social-link">
+          <FontAwesomeIcon icon={faFacebookSquare} />
+        </a>
       </span>
       <span className="icon" style={{ fontSize: size, marginRight: margin }}>
-        <FontAwesomeIcon icon={faInstagram} />
+        <a href="https://www.instagram.com/dana.id" className="social-link">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
       </span>
       <span className="icon" style={{ fontSize: size, marginRight: margin }}>
-        <FontAwesomeIcon icon={faTwitter} />
+        <a href="https://twitter.com/danasupport" className="social-link">
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
       </span>
     </div>
   )

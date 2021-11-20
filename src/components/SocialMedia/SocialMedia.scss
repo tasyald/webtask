@@ -1,10 +1,13 @@
 @import '../../assets/scss/base';
 
 .social-media {
+  .social-link {
+    color: inherit;
+  }
+
   .icon {
     font-size: 24px;
     margin-right: 1rem;
-    cursor: pointer;
   }
 }
 
