@@ -1,11 +1,14 @@
 @import '../../assets/scss/base';
 
-.customer-support {
+.contact-social {
+  margin-top: 1.5rem;
+
   .title {
     margin-bottom: 0.5rem;
   }
 
-  .email {
+  .socials {
+    margin-top: 1rem;
     color: $primary_color;
   }
 }
