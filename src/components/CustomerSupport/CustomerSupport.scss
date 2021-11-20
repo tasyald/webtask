@@ -1,0 +1,17 @@
+@import '../../assets/scss/base';
+
+.customer-support {
+  .title {
+    margin-bottom: 0.5rem;
+  }
+
+  .email {
+    color: $primary_color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    padding: 2.5rem 1rem;
+  }
+}
