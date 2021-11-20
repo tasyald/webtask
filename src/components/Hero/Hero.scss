@@ -25,7 +25,7 @@
       color: #FFFFFF;
     }
 
-    .button {
+    .hero-button {
       color: #FFFFFF;
       border: 2px solid #FFFFFF;
       border-radius: 0;
@@ -34,9 +34,10 @@
       max-width: 8.75rem;
     }
 
-    .button:hover {
+    .hero-button:hover,
+    .hero-button:focus {
       background-color: #FFFFFF;
-      border: 2px solid #FFFFFF;
+      border: none;
       color: #3F4143;
       font-weight: bold;
     }
