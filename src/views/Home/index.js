@@ -7,7 +7,6 @@ import PageController from 'components/PageController';
 const PAGE_SIZE = 16;
 
 class Home extends Component {
-
   constructor(props) {
     super(props);
     this.state = {

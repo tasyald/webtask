@@ -6,7 +6,7 @@ import './Feature.scss';
 const Feature = (props) => {
   const { feature } = props;
   return(
-    <div className="feature column" key={feature.id}>
+    <div className="feature column">
       <div>
         <img className="feature-icon" src="/images/direction.png" alt="direction" />
         <h3 className="feature-title title is-4">{feature.title}</h3>
@@ -18,7 +18,6 @@ const Feature = (props) => {
 
 Feature.propTypes = {
   feature: PropTypes.shape({
-    id: PropTypes.number,
     title: PropTypes.string,
     description: PropTypes.string,
   }).isRequired,

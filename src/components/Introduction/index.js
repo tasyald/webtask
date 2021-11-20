@@ -9,12 +9,12 @@ const Introduction = (props) => {
     <section className="introduction container-body">
       <div className="columns">
         <div className="introduction-text column is-4">
-          <h1 class="title">{title}</h1>
-          <p class="introduction-description">{description}</p>
+          <h1 className="title">{title}</h1>
+          <p className="introduction-description">{description}</p>
         </div>
 
         <div className="column is-8">
-          <img class="introduction-illustration" src="/images/illustration.jpg" alt="illustration"/>
+          <img className="introduction-illustration" src="/images/illustration.jpg" alt="illustration"/>
         </div>
 
         <div className="introduction-text-mobile column is-4">

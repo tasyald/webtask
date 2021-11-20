@@ -9,9 +9,9 @@ const Features = (props) => {
   return(
     <section className="features container-body">
       <h1 className="features-title title is-2">{title}</h1>
-      <div className="columns is-4">
-        {features.map((feature) => (
-          <Feature feature={feature} />
+      <div className="columns is-variable is-4">
+        {features.map((feature, i) => (
+          <Feature feature={feature} key={i} />
         ))}
       </div> 
     </section>
