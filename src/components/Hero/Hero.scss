@@ -13,15 +13,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    color: #FFFFFF;
 
-    h1 {
+    .hero-title {
       font-size: 50px;
       font-weight: 700;
+      color: #FFFFFF;
     }
 
-    h3 {
+    .hero-subtitle {
       margin: 1rem 0 1.5rem;
+      color: #FFFFFF;
     }
 
     .button {
@@ -35,7 +36,7 @@
 
     .button:hover {
       background-color: #FFFFFF;
-      border: 2px solid #3F4143;
+      border: 2px solid #FFFFFF;
       color: #3F4143;
       font-weight: bold;
     }

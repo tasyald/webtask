@@ -12,8 +12,8 @@ const Hero = (props) => {
     >
       <div className="hero-body">
         <div className="container has-text-centered">
-          <h1>{title}</h1>
-          <h3>{subtitle}</h3>
+          <h1 className="hero-title title">{title}</h1>
+          <h3 className="hero-subtitle subtitle">{subtitle}</h3>
           <button className="button is-primary is-outlined">More Info</button>
         </div>
       </div>
