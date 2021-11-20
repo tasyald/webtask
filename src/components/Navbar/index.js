@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Navbar.scss';
 
@@ -12,9 +13,9 @@ const Navbar = () => {
   return(
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a href="/webtask/home" className="navbar-item">
+        <Link to="/webtask/home" className="navbar-item">
           <img src="/images/dana_logo.png" alt="dana" />
-        </a>
+        </Link>
 
         <button
           onClick={handleClickBurger}
@@ -28,12 +29,12 @@ const Navbar = () => {
         </button>
 
         <div className={`navbar-dropdown${isActive ? ' is-active' : ''}`}>
-          <a href="/webtask/about" className="navbar-item">
+          <Link to="/webtask/about" className="navbar-item">
             About
-          </a>
-          <a href="/webtask/contact" className="navbar-item">
+          </Link>
+          <Link to="/webtask/contact" className="navbar-item">
             Contact Us
-          </a>
+          </Link>
         </div>
 
         {isActive && (
@@ -43,12 +44,12 @@ const Navbar = () => {
 
       <div className="navbar-menu">
         <div className="navbar-end">
-          <a href="/" className="navbar-item">
+          <Link to="/webtask/about" className="navbar-item">
             About
-          </a>
-          <a href="/" className="navbar-item">
+          </Link>
+          <Link to="/webtask/contact" className="navbar-item">
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

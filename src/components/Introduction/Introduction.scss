@@ -1,0 +1,35 @@
+@import '../../assets/scss/base';
+
+.introduction {
+  padding: 3rem;
+
+  .introduction-text {
+    align-self: center;
+  }
+
+  .introduction-illustration {
+    width: 100%;
+  }
+
+  .introduction-text-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .introduction {
+    padding: 2.5rem 1rem;
+
+    .title {
+      text-align: center;
+    }
+
+    .introduction-description {
+      display: none;
+    }
+
+    .introduction-text-mobile {
+      display: block;
+    }
+  }
+}

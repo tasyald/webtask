@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 import './Footer.scss';
 
@@ -26,10 +27,10 @@ const Footer = () => (
 
       <div className="column is-6 footer-copyrights">
         <div className="footer-links">
-          <a href="/" className="footer-link">Menu</a>
-          <a href="/" className="footer-link">Menu</a>
-          <a href="/" className="footer-link">Menu</a>
-          <a href="/" className="footer-link">Menu</a>
+          <Link to="/" className="footer-link">Menu</Link>
+          <Link to="/" className="footer-link">Menu</Link>
+          <Link to="/" className="footer-link">Menu</Link>
+          <Link to="/" className="footer-link">Menu</Link>
         </div>
         <div>
           <span className="copyright-year">&copy; 2017</span> DANA – PT. Espay Debit Koe. All Rights Reserved.
