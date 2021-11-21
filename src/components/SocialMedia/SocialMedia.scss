@@ -1,0 +1,23 @@
+@import '../../assets/scss/base';
+
+.social-media {
+  .social-link {
+    color: inherit;
+  }
+
+  .icon {
+    font-size: 24px;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social-media {
+    display: flex;
+    justify-content: space-around;
+
+    .icon {
+      margin-right: 0 !important;
+    }
+  }
+}

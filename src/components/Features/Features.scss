@@ -1,0 +1,20 @@
+@import '../../assets/scss/base';
+
+.features {
+  padding: 3rem;
+
+  .features-title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 2.5rem 1rem;
+
+    .features-title {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import '../../assets/scss/base';
+
+.footer {
+  background: $primary_color;
+  padding: 5rem 1.5rem 3rem;
+
+  .columns {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+  
+    .footer-copyrights {
+      text-align: right;
+  
+      .footer-links {
+        text-transform: uppercase;
+  
+        .footer-link {
+          color: #FFFFFF;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 3rem;
+
+    .column {
+      text-align: center !important;
+
+      .footer-follow-us {
+        margin-bottom: 1rem;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+
+        .footer-link {
+          margin-left: 0 !important;
+        }
+      }
+
+      .copyright-year {
+        display: block;
+      }
+    }
+  }
+}

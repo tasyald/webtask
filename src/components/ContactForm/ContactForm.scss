@@ -1,0 +1,50 @@
+@import '../../assets/scss/base';
+
+.contact-form {
+  padding: 3rem;
+
+  .is-mobile {
+    display: none;
+  }
+
+  .field:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .input:active,
+  .textarea:active {
+    border-color: $primary_color;
+  }
+
+  .textarea {
+    resize: none;
+  }
+
+  .button-send {
+    margin-top: 1.5rem;
+    background-color: $primary_color;
+  }
+
+  .button-send:hover {
+    background-color: #1081DE;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    padding: 2.5rem 2rem;
+
+    .title {
+      margin-bottom: 0;
+    }
+
+    .is-mobile {
+      display: block;
+
+      .fill-form {
+        text-align: center;
+        margin: 1rem 0;
+      }
+    }
+  }
+}
