@@ -30,7 +30,7 @@ Hero.propTypes = {
 Hero.defaultProps = {
   title: 'Lorem Ipsum',
   subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum turpis orci.',
-  image: '/images/placeholder_hero.jpg',
+  image: 'assets/images/placeholder_hero.jpg',
 };
 
 export default Hero;
