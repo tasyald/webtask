@@ -10,7 +10,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      subtitle: '',
+      subtitle: undefined,
       photos: [],
       pages: 1,
       page: 1,
@@ -28,7 +28,7 @@ class Home extends Component {
         const { data } = res;
         this.setState({ subtitle: data.value });
       })
-      .catch((e) => {
+      .catch(() => {
       })
   }
 
