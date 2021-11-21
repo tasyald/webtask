@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import illustration from 'assets/images/illustration.jpg';
 
 import './Introduction.scss';
 
@@ -14,7 +15,7 @@ const Introduction = (props) => {
         </div>
 
         <div className="column is-8">
-          <img className="introduction-illustration" src="/images/illustration.jpg" alt="illustration"/>
+          <img className="introduction-illustration" src={illustration} alt="illustration"/>
         </div>
 
         <div className="introduction-text-mobile column is-4">

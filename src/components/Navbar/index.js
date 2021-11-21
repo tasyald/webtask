@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import danaLogo from 'assets/images/dana_logo.png';
 
 import './Navbar.scss';
 
@@ -14,7 +15,7 @@ const Navbar = () => {
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link to="/webtask/home" className="navbar-item">
-          <img src="/images/dana_logo.png" alt="dana" />
+          <img src={danaLogo} alt="dana" />
         </Link>
 
         <button
