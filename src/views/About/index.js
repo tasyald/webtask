@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { apiGetAboutInfo } from 'api/about.api';
+import { apiGetAboutInfo, apiGetAboutInfoBackup } from 'api/about.api';
 import Introduction from 'components/Introduction';
 import Features from 'components/Features';
 
@@ -26,6 +26,21 @@ class About extends Component {
         });
       })
       .catch(() => {
+        this.fetchAboutInfoBackup();
+      })
+  }
+
+  fetchAboutInfoBackup = async () => {
+    await apiGetAboutInfoBackup()
+      .then((res) => {
+        console.log(res);
+        const { data: { result: { properties } } }  = res;
+        this.setState({ title: properties.title, description: properties.opening_crawl }, () => {
+          this.generateFeatures();
+        });
+      })
+      .catch(() => {
+        this.setState({ title: undefined, description: undefined });
       })
   }
 
