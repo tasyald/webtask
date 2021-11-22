@@ -33,7 +33,6 @@ class About extends Component {
   fetchAboutInfoBackup = async () => {
     await apiGetAboutInfoBackup()
       .then((res) => {
-        console.log(res);
         const { data: { result: { properties } } }  = res;
         this.setState({ title: properties.title, description: properties.opening_crawl }, () => {
           this.generateFeatures();
@@ -62,7 +61,7 @@ class About extends Component {
         {features.length > 0 && <Features title={title} features={features} />}
       </div>
     )
-  };
-};
+  }
+}
 
 export default About;

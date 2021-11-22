@@ -67,7 +67,7 @@ class Home extends Component {
         <PageController pages={pages} currentPage={page} onChange={this.onChangePage} />
       </div>
     )
-  };
-};
+  }
+}
 
 export default Home;
