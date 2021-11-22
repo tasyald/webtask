@@ -18,11 +18,11 @@ const CustomerSupport = (props) => {
   )
 };
 
-ContactNumber.propTypes = {
+CustomerSupport.propTypes = {
   number: PropTypes.string,
 };
 
-ContactNumber.defaultProps = {
+CustomerSupport.defaultProps = {
   number: '',
 };
 
