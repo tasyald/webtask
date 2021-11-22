@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const aboutApiUrl = {
-  about: 'https://swapi.dev/api/films/1/',
+  about: 'https://swapi.dev/api/films/1',
   about2: 'https://www.swapi.tech/api/films/1',
 }
 
