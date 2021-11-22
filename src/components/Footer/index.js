@@ -16,8 +16,8 @@ const Footer = () => (
 
       <div className="column is-6 footer-copyrights">
         <div className="footer-links">
-          <Link to="/webtask/about" className="footer-link">About</Link>
-          <Link to="/webtask/contact" className="footer-link">Contact Us</Link>
+          <Link to="/about" className="footer-link">About</Link>
+          <Link to="/contact" className="footer-link">Contact Us</Link>
         </div>
         <div>
           <span className="copyright-year">&copy; 2017</span> DANA – PT. Espay Debit Koe. All Rights Reserved.

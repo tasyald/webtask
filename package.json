@@ -2,7 +2,7 @@
   "name": "dana-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tasyald.github.io/dana-task/",
+  "homepage": "http://tasyald.github.io/webtask",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
