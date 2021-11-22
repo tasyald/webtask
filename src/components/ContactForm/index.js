@@ -9,7 +9,7 @@ const ContactForm = () => {
       <h2 className="title">Contact Us</h2>
       <div className="is-mobile">
         <ContactNumber number="1-500-445" center />
-        <p className="fill-form">Or kindly fill out this form, we'll get back to you as quickly as possible</p>
+        <p className="fill-form">Or kindly fill out this form, we&apos;ll get back to you as quickly as possible</p>
       </div>
       <form>
         <div className="field">
